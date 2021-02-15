@@ -11,7 +11,7 @@ const {
 // addContact("Elon Mask", "Mask@mainModule.com" , "38095 - 55555 - 55");
 // addContact("Lee Harvy Osvald", " Osvald@main.com" , "88-888-888");
 
-// TODO: рефакторить
+
 function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
