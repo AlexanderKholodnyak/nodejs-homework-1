@@ -1,20 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 const shortid = require("shortid");
-// const contactsPath = require('./db/contacts.json');
+
 const contactsPath = path.join(__dirname,'/db/contacts.json');
 
-// console.log('Название файла: ', path.basename(__filename));
-// console.log('Контакты: ', contactsPath);
 
-// contacts.js
-
-/*
- * Раскомментируй и запиши значение
- * const contactsPath = ;
- */
-
-// TODO: задокументировать каждую функцию
 function listContacts() {
     fs.readFile(contactsPath,"utf-8", (error, data) => {
         if (error) {
